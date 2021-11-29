@@ -1,0 +1,157 @@
+/* Root level Style */
+.root {
+    font-family: "Lucida console", Monaco, monospace;
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header Bar Style */
+.headBar {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1%;
+}
+
+.headBar a {
+    text-decoration: none;
+}
+
+.quizTimer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.quizTimer div {
+    padding: 0px 5px;
+}
+
+/* Quiz Card Style */
+.container {
+    margin: auto;
+    padding: 2%;
+    background-color: lightblue;
+    border: 5px solid aqua;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 50%;
+    display: grid;
+}
+
+/* Start Page */
+#textBoxContainer {
+    font-size: 1.5rem;
+    margin: 1%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+/* Questions page */
+#questionBox {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+.quizQuestions {
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+}
+
+#correct {
+    font-size: 1.5rem;
+    margin: 1%;
+    border-top: black solid;
+    font-style: italic;
+    color: darkgreen;
+}
+
+#wrong {
+font-size: 1.5rem;
+margin: 1%;
+border-top: black solid;
+font-style: italic;
+color: red;
+}
+
+/* Submit Form */
+.submitForm {
+    margin: auto;
+    padding: 2%;
+    background-color: lightblue;
+    border: 5px solid aqua;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitForm h1 {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+#highScore h1 {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+#scoreList {
+    font-size: 1.5rem;
+    margin: 1%;
+    background-color: #5b8cf5;
+    width: max-content;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 5% 0%;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin: 1%;
+}
+
+
+/* Buttons */
+.button {
+    border:4px solid #5138CF;
+    border-radius:5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #22cf12 0%, #49cf3c 100%);
+    margin: 1%;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0% 5%;
+}
+
+.controls {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
