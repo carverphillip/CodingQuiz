@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Cash Quiz Game</title>
+    <link type='text/css' rel='stylesheet' href='reset.css' />
+    <link type='text/css' rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+    <header class = "headBar">
+        <a href="#" onclick = 'viewScoreBtn()' class = "viewScores">View Highscores</a>
+        <div class= "quizTimer">
+          <div>Time: </div>
+          <div id = "timerCount">60</div>
+        </div>
+    </header>
+    <main>
+      <card class = "container">
+        <section id = "textBoxContainer">
+          <div id = "textBox"> 
+            Answer the questions as fast as possible before the time runs out. 10 seconds will be deducted for every wrong Answer
+          </div><br>
+          <button id="startBtn" class="startBtn button">Start</button>
+        </section>
+        <section id = "submitForm" class = "hide">
+          <h1>All Done!</h1><br>
+          <h2 class = 'scoreInfo'></h2><br>
+          <form class = "name">
+            <label for = "initials">Enter Initials: </label>
+            <input id = "initials" name = "initials" type="text" maxlength="4" size="4" onClick = clearEl()>
+            <button id="submitBtn" class= "submitBtn button">Submit</button>
+          </form><br>
+        </section>
+        <section id = "highScore" class = 'hide'>
+          <h1>HighScores</h1><br>
+          <ul id = "scoreList"></ul><br><br>
+          <div class = "controls">
+          <button id="goBackBtn" class="goBackBtn button controls">Go Back</button>
+          <button id="clearBtn" class="clearBtn button controls">Clear Highscore</button>
+          </div> 
+        </section>
+        <section class = "quizQuestions">
+          <h1  id="questionBox" class = "hide">Question:</h1><br>
+          <div id = "ansBtn" class = "hide"></div><br>
+        </section>
+        <section>
+          <p id = "correct" class = "hide">Correct!!</p>
+          <p id = "wrong" class = "hide">Wrong!!</p>
+        </section>
+        
+      </card>
+    </main>
+
+  
+  <script type='text/javascript' src='quiz.js'></script>
+</body>
